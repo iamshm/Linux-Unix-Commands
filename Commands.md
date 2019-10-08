@@ -2,8 +2,8 @@
 
 ## listing files
 
--`ls`
--If you want to see the list of files on your UNIX or Linux system, use the 'ls' command
+-`ls`\
+-If you want to see the list of files on your UNIX or Linux system, use the 'ls' command\
 
 ## Creating & Viewing Files
 
