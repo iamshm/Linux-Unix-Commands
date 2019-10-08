@@ -7,6 +7,7 @@
 <img style="padding:10px;" src="https://img.shields.io/github/hacktoberfest/2019/iamshm/Linux-Unix-Commands?suggestion_label=Hacktoberfest&style=flat-square">
 <img style="padding:10px;" src="https://img.shields.io/github/forks/iamshm/Linux-Unix-Commands?label=Forks&style=flat-square">
 <img style="padding:10px;" src="https://img.shields.io/github/stars/iamshm/Linux-Unix-Commands?style=flat-square">
+<img style="padding:10px;" src="https://img.shields.io/github/license/iamshm/Linux-Unix-Commands?style=flat-square">
 
 
 
@@ -29,6 +30,7 @@ Anyone. Absolutely anyone can contribute to this repository. Please check the ru
 - Add an issue to this repository stating the use of that command line.
 - Fork this repository and give a star.
 - Try to provide examples for that command line.
+- Once go through the raw file of `Commands.md` to get the jist of formatting required.
 - Add it to the`Commands.md` file.
 - Create a Pull request
 - Feel free to improve the README.md
