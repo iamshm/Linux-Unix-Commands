@@ -7,7 +7,7 @@
 <img style="padding:10px;" src="https://img.shields.io/github/hacktoberfest/2019/iamshm/Linux-Unix-Commands?suggestion_label=Hacktoberfest&style=flat-square">
 <img style="padding:10px;" src="https://img.shields.io/github/forks/iamshm/Linux-Unix-Commands?label=Forks&style=flat-square">
 <img style="padding:10px;" src="https://img.shields.io/github/stars/iamshm/Linux-Unix-Commands?style=flat-square">
-<img style="padding:10px;" src="https://img.shields.io/github/license/iamshm/Linux-Unix-Commands?style=flat-square">
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 A community-built repository which includes most of the basic command lines.
