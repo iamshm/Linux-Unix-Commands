@@ -9,3 +9,33 @@
 <img style="padding:10px;" src="https://img.shields.io/github/stars/iamshm/Linux-Unix-Commands?style=flat-square">
 <img style="padding:10px;" src="https://img.shields.io/github/languages/count/iamshm/Linux-Unix-Commands?style=flat-square">
 <img style="padding:10px;" src="https://img.shields.io/github/license/iamshm/Linux-Unix-Commands?style=flat-square">
+
+
+A community-built repository which includes most of the important algorithms to help programmers.
+
+</p>
+
+## What is this repository for?
+
+This is list of many useful basic linux command lines.
+
+## Who can contribute for this repository?
+
+Anyone. Absolutely anyone can contribute to this repository. Please check the rules below before you make pull requests.
+
+# CONTRIBUTION
+
+## How to contribute?
+
+- Add an issue to this repository stating the use of that command line.
+- Fork this repository and give a star.
+- Try to provide examples for that command line.
+- Add it to your repository in the directory order `[repository root]/Algorithm Type/Algorithm Name/Language/`
+- Create a Pull request
+- Feel free to improve the README.md
+
+## Rules
+
+- Please do not spam pull request for the sake of Hacktoberfest.
+- No duplicate entries. Please check if the code is existing or not before you start submiting.
+- Star this repository to show appreciation towards public efforts.
