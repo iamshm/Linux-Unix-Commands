@@ -10,7 +10,7 @@
 <img style="padding:10px;" src="https://img.shields.io/github/license/iamshm/Linux-Unix-Commands?style=flat-square">
 
 
-A community-built repository which includes most of the important algorithms to help programmers.
+A community-built repository which includes most of the basic command lines.
 
 </p>
 
