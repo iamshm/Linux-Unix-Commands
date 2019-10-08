@@ -38,5 +38,5 @@ Anyone. Absolutely anyone can contribute to this repository. Please check the ru
 ## Rules
 
 - Please do not spam pull request for the sake of Hacktoberfest.
-- No duplicate entries. Please check if the code is existing or not before you start submiting.
+- No duplicate entries. Please check if the command is existing before you submit.
 - Star this repository to show appreciation towards public efforts.
