@@ -96,3 +96,12 @@ youtube-dl -a url.txt
 ```
 If you are more interested, there are plenty of other options to be explored from [documentation page.](https://github.com/ytdl-org/youtube-dl)
 
+## Shutting down the machine
+- `shutdown -h now`\
+-If you want to Shutdown the system and turn the power off immediately.
+- `shutdown -h +10`
+-If you want to Shutdown the system after 10 minutes. 
+- `shutdown -r now`
+-If you want to Reboot the system using shutdown command.
+
+
