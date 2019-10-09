@@ -30,7 +30,7 @@ Anyone. Absolutely anyone can contribute to this repository. Please check the ru
 - Add an issue to this repository stating the use of that command line.
 - Fork this repository and give a star.
 - Try to provide examples for that command line.
-- Once go through the raw file of `Commands.md` to get the jist of formatting required.
+- Once go through the raw file of `Commands.md` to get the gist of formatting required.
 - Add it to the`Commands.md` file.
 - Create a Pull request
 - Feel free to improve the README.md
