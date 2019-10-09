@@ -156,6 +156,36 @@ If you are more interested, there are plenty of other options to be explored fro
 -`cd "dir name"` or `cd dir\ name`\
 -This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
 
+## Creating and Removing Directories
+
+* `mkdir` command is used for creating directories.
+  - Creating a directory is pretty straightforward.  
+        `mkdir [dir-name]`  
+    
+   - Creating a complete directory structure. (Non of the directories should already exist)   
+         `mkdir -p dir1/dir2/dir3`
+   - Make `mkdir` emmit the details of operation.    
+          `mkdir -v [dir-name]`
+          
+* `rmdir` command is used for removing empty directories.
+  - Removing a directory is also pretty straightforward.  
+        `rmdir [dir-name]`  
+    
+   - Make `rmdir` ignore non empty directories.
+        BY default, the rmdir command throws an error if you try deleting a non-empty directory. However, if you want, you can suppress this behavior of rmdir using the --ignore-fail-on-non-empty option.  
+         `rmdir --ignore-fail-on-non-empty [dir-name]`
+   - Remove parent directories along with the directory.    
+          `rmdir -p test/test-dir/`
+        
+  * `rm -r` command is used for removing non empty directories.
+  - Removing a non empty directory is also pretty straightforward.  
+        `rm -r [dir-name]`
+        This will present a prompt for approval to delete each of the files. 
+        
+  - If you don't want such a prompt,  
+        `rm -rf [dir-name]`
+        This will not present a prompt for approval to delete each of the files.
+
 ## Compress files on linux
 
 The following commands are used to compress files on linux. There are many ways to compress files in linux, the most common is **tar**
