@@ -1,6 +1,8 @@
 <h1 align="center">Linux/Unix Commands</h1>
 
 ## listing files
+- Frequent forms of `ls` command usage
+
 -`ls`\
 -If you want to see the list of files on your UNIX or Linux system, use the `ls` command
 
@@ -33,5 +35,30 @@
 -To view a file, use the command\
 `cat filename`
 
+## Moving between Directories
+- Exploring `cd`(change directory) command
 
+-`cd [directory_name]`\
+-If you want to change directory to a particular directory,use this command. Eg: cd Documents
 
+-`cd dir/subdir/subsubdir`\
+-If you want to move inside a directory from a directory,use this command. Eg: cd Documents/Hacktoberfest/linuxCommands
+
+-`cd /`\
+-If you want to change directory to the root directory. Root directory is the first directory in your file system hierarchy.
+
+-`cd ~` or `cd`\
+-If you want to change directory to the home directory.Generally known as $HOME,located at path /home/<your username>/.
+  Also, `cd` command can be used to do the same above operation.
+  
+-`cd ..`\
+-It is used to go one level back directory(i.e to parent directory of current directory).
+
+-`cd ../..`\
+-It is used to go two levels back directory(i.e to parent's parent directory of current directory).
+
+-`cd -`\
+-It is used to change back to the previous working directory. Eg: If `Documents` is present working directory and `Downloads` is previous working directory, this command takes you back to `Downloads` directory.
+
+-`cd "dir name"` or `cd dir\ name`\
+-This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
