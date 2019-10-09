@@ -57,6 +57,7 @@
 - `find . -name ".js" -print`: find all files with JS extnesion and print them on screen
 - `find . -type d -name "*tmp" -print`: print all directories ending with `tmp`
 - `find . -type f -exec ls -l {} \;`: use `ls -l` on all returned values
+- 
 
 ## Exiting the shell
 - `exit` (also aliased to `bye` or `quit` in some shell flavors)
@@ -86,6 +87,7 @@ The commands for installing and updating applications depend on the version of L
   - Update all or specified packages,use ```sudo yum update```. Example for updating specific package: ```sudo yum update mysql```
   - Lists known and installed packages,use ```sudo yum list``` ```sudo yum list --installed```
   - Install requested package,use ```yum install```. Example: ```sudo yum -y install firefox```
+  - On Fedora 22 and later, you can also use 'dnf' in place of 'yum'. dnf stands for dandified yum, and is just an updated version of yum.     	   Syntax is very similar, Examples would be: ```sudo dnf update``` or ```sudo dnf install```. More info on this [here.](https://opensource.com/article/18/8/guide-yum-dnf)
 
 ## Download YouTube videos on Linux
 
