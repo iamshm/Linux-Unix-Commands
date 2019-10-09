@@ -1,12 +1,20 @@
 <h1 align="center">Linux/Unix Commands</h1>
 
 ## Listing Files
--`ls`\
+- `ls`\
 -If you want to see the list of files on your UNIX or Linux system, use the `ls` command
+- `ls -l` or `ll`
+-If you want to organize the files in list
+- `ls -lh`
+-If you want to arrange the files in list and show their size
+
 
 ## Listing Hidden Files and Normal Files
 - `ls -al`
--If you want ot see the list of all files with all hidden files in the Current directory system in Linux 
+-If you want ot see the list of all files with all hidden files in the Current directory system in Linux
+- `ls -lha`
+-If you want to organize files in list format with their sizes and see hidden files
+
 
 ## Creating & Viewing Files
 -To create a new file, use the command\
