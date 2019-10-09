@@ -40,14 +40,14 @@
 
 ## Get root access
 1. To log in as a super user use one of the following commands in the terminal. You can actually use this command to log in as any user on the machine, but when left blank it will attempt to log in as root.\
-  - `su -`\
-  - `sudo -i`\
+  - `su -`
+  - `sudo -i`
   - These commands will ask you for password.
 2. To jump right into root, run\
-  - `sudo su -`\
+  - `sudo su -`
   - Since there is no root password made after live install.
 3. To run other commands as root temporarily, use the command\
-  - `sudo` *`command`*\
+  - `sudo` *`command`*
   - Replace the *command* above with your command. Eg: `sudo apt-get update`
 
 ## Updating, Installing and Listing packages
@@ -97,7 +97,7 @@ youtube-dl -a url.txt
 If you are more interested, there are plenty of other options to be explored from [documentation page.](https://github.com/ytdl-org/youtube-dl)
 
 ## Shutting down the machine
-- `shutdown -h now`\
+- `shutdown -h now`
 -If you want to Shutdown the system and turn the power off immediately.
 - `shutdown -h +10`
 -If you want to Shutdown the system after 10 minutes. 
