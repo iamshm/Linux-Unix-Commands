@@ -18,6 +18,14 @@
 - This will show all lines which have the word ```GNU``` in that file
 - To search over multiple files in a directory, use ```grep``` with ```-r``` flag, like ``` grep -r GNU .```. Here ```-r``` stands for recursive search and ```.``` specifies the search root to be the current directory.
 
+## Searching for a file
+- `find . -name ".js" -print`: find all files with JS extnesion and print them on screen
+- `find . -type d -name "*tmp" -print`: print all directories ending with `tmp`
+- `find . -type f -exec ls -l {} \;`: use `ls -l` on all returned values
+
+## Exiting the shell
+- `exit` (also aliased to `bye` or `quit` in some shell flavors)
+
 ## Get root access
 1. To log in as a super user use one of the following commands in the terminal. You can actually use this command to log in as any user on the machine, but when left blank it will attempt to log in as root.\
 -`su -`\
@@ -44,3 +52,4 @@ The commands for installing and updating applications depend on the version of L
   - Lists known and installed packages,use ```sudo yum list``` ```sudo yum list --installed```
   - Install requested package,use ```yum install```. Example: ```sudo yum -y install firefox```
   
+
