@@ -171,19 +171,20 @@ If you are more interested, there are plenty of other options to be explored fro
   - Removing a directory is also pretty straightforward.  
         `rmdir [dir-name]`  
     
-   - Make `rmdir` ignore non empty directories.
-        BY default, the rmdir command throws an error if you try deleting a non-empty directory. However, if you want, you can suppress this behavior of rmdir using the --ignore-fail-on-non-empty option.  
+   - Make `rmdir` ignore non empty directories.  
+        BY default, the rmdir command throws an error if you try deleting a non-empty directory. However, if you want, you can suppress this behavior of rmdir using the `--ignore-fail-on-non-empty` option.
+        
          `rmdir --ignore-fail-on-non-empty [dir-name]`
    - Remove parent directories along with the directory.    
           `rmdir -p test/test-dir/`
         
-  * `rm -r` command is used for removing non empty directories.
+* `rm -r` command is used for removing non empty directories.
   - Removing a non empty directory is also pretty straightforward.  
-        `rm -r [dir-name]`
+        `rm -r [dir-name]`  
         This will present a prompt for approval to delete each of the files. 
         
   - If you don't want such a prompt,  
-        `rm -rf [dir-name]`
+        `rm -rf [dir-name]`  
         This will not present a prompt for approval to delete each of the files.
 
 ## Compress files on linux
