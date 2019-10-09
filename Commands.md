@@ -30,7 +30,7 @@
 -`sudo` *`command`*\
 -Replace the *command* above with your command. Eg: `sudo apt-get update`
 
-## Updating, Installing and Listing applications
+## Updating, Installing and Listing packages
 
 The commands for installing and updating applications depend on the version of Linux you are using, specifically whether it's Debian- or RPM-based.
 
