@@ -56,4 +56,35 @@ The commands for installing and updating applications depend on the version of L
   - Lists known and installed packages,use ```sudo yum list``` ```sudo yum list --installed```
   - Install requested package,use ```yum install```. Example: ```sudo yum -y install firefox```
   
+## Download YouTube videos on Linux
+
+For this you need to install an utility called **youtube-dl**, which is a command-line program to download videos from YouTube.com and a few more sites. It requires the Python interpreter, version 2.6, 2.7, or 3.2+, and it is not platform specific. It should work on your Unix box, on Windows or on macOS. It is open source project. You can contribute [here.](https://github.com/ytdl-org/youtube-dl)
+
+To install it right away for all UNIX users (Linux, macOS, etc.), type:
+
+    sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+    sudo chmod a+rx /usr/local/bin/youtube-dl
+
+If you do not have curl, you can alternatively use a recent wget:
+
+    sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+    sudo chmod a+rx /usr/local/bin/youtube-dl
+
+It is very simple to use. Following are some example usages:
+
+```bash
+# simplest example
+youtube-dl https://www.youtube.com/watch?v=Zuwa8zlfXSY
+
+# customize the filename of the output
+youtube-dl -o '%(title)s by %(uploader)s.%(ext)s' https://www.youtube.com/watch?v=Zuwa8zlfXSY
+
+# download from multiple urls
+youtube-dl <url1> <url2>
+
+# or use a file with list of urls
+youtube-dl -a url.txt
+
+```
+If you are more interested, there are plenty of other options to be explored from [documentation page.](https://github.com/ytdl-org/youtube-dl)
 
