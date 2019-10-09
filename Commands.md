@@ -1,20 +1,21 @@
 <h1 align="center">Linux/Unix Commands</h1>
 
 ## Listing Files
--`ls`\
--If you want to see the list of files on your UNIX or Linux system, use the `ls` command
+- `ls`
+- If you want to see the list of files on your UNIX or Linux system, use the `ls` command
 
 ## Listing Hidden Files and Normal Files
 - `ls -al`
--If you want ot see the list of all files with all hidden files in the Current directory system in Linux 
+- If you want ot see the list of all files with all hidden files in the Current directory system in Linux 
 
 ## Creating & Viewing Files
--To create a new file, use the command\
-1.`cat > filename`\
-2.Add content\
-3.Press `ctrl + d` to return to command prompt.\
--To view a file, use the command\
-`cat filename`
+- To create a new file, use the command
+  1. `cat > filename`
+  2. Add content
+  3. Press `ctrl + d` to return to command prompt.
+- Files can also be quickly created using 
+- ```echo "Hello World" > ./fileName.txt```
+- To view a file, use the command `cat filename`
 
 ## Searching for content in a file/ files in a directory
 - To search for a word in a file using terminal,use the command ```grep```
@@ -32,15 +33,15 @@
 
 ## Get root access
 1. To log in as a super user use one of the following commands in the terminal. You can actually use this command to log in as any user on the machine, but when left blank it will attempt to log in as root.\
--`su -`\
--`sudo -i`\
--These commands will ask you for password.
+  - `su -`\
+  - `sudo -i`\
+  - These commands will ask you for password.
 2. To jump right into root, run\
--`sudo su -`\
--Since there is no root password made after live install.
+  - `sudo su -`\
+  - Since there is no root password made after live install.
 3. To run other commands as root temporarily, use the command\
--`sudo` *`command`*\
--Replace the *command* above with your command. Eg: `sudo apt-get update`
+  - `sudo` *`command`*\
+  - Replace the *command* above with your command. Eg: `sudo apt-get update`
 
 ## Updating, Installing and Listing packages
 
@@ -88,3 +89,15 @@ youtube-dl -a url.txt
 ```
 If you are more interested, there are plenty of other options to be explored from [documentation page.](https://github.com/ytdl-org/youtube-dl)
 
+## Compress files on linux
+
+The following commands are used to compress files on linux. There are many ways to compress files in linux, the most common is **tar**
+
+* tar
+  - The following commands makes an archive named archive.tar containing file foo and bar present in the current directory.
+  - ```tar -cf archive.tar foo bar```
+  - This command lists all the files in an archive verbosely.
+  - ```tar -tvf archive.tar```
+  - The `tar` utility has many options which can be seen using
+  - ```tar --help```
+  
