@@ -1,6 +1,6 @@
 <h1 align="center">Linux/Unix Commands</h1>
 
-## listing files
+## Listing Files
 -`ls`\
 -If you want to see the list of files on your UNIX or Linux system, use the `ls` command
 
@@ -30,3 +30,17 @@
 -`sudo` *`command`*\
 -Replace the *command* above with your command. Eg: `sudo apt-get update`
 
+## Updating, Installing and Listing applications
+
+The commands for installing and updating applications depend on the version of Linux you are using, specifically whether it's Debian- or RPM-based.
+
+* Debian Based systems
+  - Update the list of available packages and their versions, but doen not install or upgrade any packages. use the command ```sudo apt update```
+  - Install newer versions of installed packages,use the command ```sudo apt upgrade```
+  - Install any required package,use ```sudo apt install 'your package name'```. Example: ```sudo apt install apache2```
+  
+* RPM-based systems
+  - Update all or specified packages,use ```sudo yum update```. Example for updating specific package: ```sudo yum update mysql```
+  - Lists known and installed packages,use ```sudo yum list``` ```sudo yum list --installed```
+  - Install requested package,use ```yum install```. Example: ```sudo yum -y install firefox```
+  
