@@ -316,3 +316,26 @@ This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in 
     To find out /etc/ directory space usage :
     $du /etc/
     $du -h /etc/
+    
+ 
+ ### `diff`
+- `diff` is an extremely useful command to know in Linux and often used in GIT as well as `git diff`.
+- Compare FILES line by line
+
+- ***Basic Use:***
+Syntax: diff [OPTION]... FILES
+```bash
+$  cat > diff_test_file1.txt
+This is a test file 1
+$  cat > diff_test_file2.txt
+This is a test file 2
+   ```
+Example:
+```bash
+$ diff diff_test_file1.txt diff_test_file2.txt
+1c1
+< This is a test file 1
+---
+> This is a test file 2
+```
+
