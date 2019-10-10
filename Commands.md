@@ -254,3 +254,18 @@ The following commands are used to compress files on linux. There are many ways 
    $ grep -i case grep_test.txt  # ignore case while searching
    This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in the output
     ```
+    ###  TO CHECK DISK SPACE USED AND AVAILAVBLE
+    - COMMANDS
+    $df     (Table that lists for each device name on the system)
+    $df -h  (To see output in Human Readable Format)
+    $df -m  (Output in one-megabyte)
+    $df -k  (Output in one-kilobyte blocks)
+    
+    ### TO CHECK DISK SPACE USED BY SPECIFIED FILES AND FOR EACH SUB-DIRECTORY
+    -COMMANDS
+    $du      (Names and space consumption of each of the directories including all subdirectories)
+    $du -h   (To see output in Human Readable Format)
+    
+    To find out /etc/ directory space usage :
+    $du /etc/
+    $du -h /etc/
