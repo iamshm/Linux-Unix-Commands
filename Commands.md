@@ -151,29 +151,29 @@ If you are more interested, there are plenty of other options to be explored fro
 ## Moving between Directories
 - Exploring `cd`(change directory) command
 
-- `cd [directory_name]`\
+- `cd [directory_name]`
 - If you want to change directory to a particular directory,use this command. Eg: cd Documents
 
-- `cd dir/subdir/subsubdir`\
+- `cd dir/subdir/subsubdir`
 - If you want to move inside a directory from a directory,use this command. Eg: cd Documents/Hacktoberfest/linuxCommands
 
-- `cd /`\
+- `cd /`
 - If you want to change directory to the root directory. Root directory is the first directory in your file system hierarchy.
 
-- `cd ~` or `cd`\
+- `cd ~` or `cd`
 - If you want to change directory to the home directory.Generally known as $HOME,located at path /home/<your username>/.
   Also, `cd` command can be used to do the same above operation.
 
-- `cd ..`\
+- `cd ..`
 - It is used to go one level back directory(i.e to parent directory of current directory).
 
-- `cd ../..`\
+- `cd ../..`
 - It is used to go two levels back directory(i.e to parent's parent directory of current directory).
 
-- `cd -`\
+- `cd -`
 - It is used to change back to the previous working directory. Eg: If `Documents` is present working directory and `Downloads` is previous working directory, this command takes you back to `Downloads` directory.
 
-- `cd "dir name"` or `cd dir\ name`\
+- `cd "dir name"` or `cd dir\ name`
 - This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
 ## Configure to mysql
 - 'mysql -u root -p'
@@ -213,15 +213,42 @@ If you are more interested, there are plenty of other options to be explored fro
 
 The following commands are used to compress files on linux. There are many ways to compress files in linux, the most common is **tar**
 
-* tar
+* Compress
   - The following commands makes an archive named archive.tar containing file foo and bar present in the current directory.
   - ```tar -cf archive.tar foo bar```
   - This command lists all the files in an archive verbosely.
   - ```tar -tvf archive.tar```
   - The `tar` utility has many options which can be seen using
   - ```tar --help```
+* Decompress
+  - We will again use the `tar` utility to decompress files. The following command is used to decompress the file named `yourfile.tar.gz`. This command is for the `.gz.` extention.
+  - ```tar -zxvf yourfile.tar.gz```
+  - If the file has the extention `.tar`, this command can be used.
+  - ```tar -xvf yourfile.tar```
+  - The above commands will extract to the current folder, to extract to another folder use the following commands.
+  - ```tar -C /myfolder -zxvf yourfile.tar.gz```
+  - ```tar -C /myfolder -xvf yourfile.tar```
 
 ## Basic Commands
+
+  ### `wget`
+  
+  - The `wget` command is one of the simplist commands in linux. It allows the user to fetch internet resources without having to open a browser.
+  - ***Basic Use:***
+
+  Syntax:
+  
+  ```
+  $ wget url
+  ```
+
+  Example:
+  
+  - Suppose we want to download a cat photo stored on say `https://example.com/cat.png'. To do so, we'll use the following command.
+  ```
+  $ wget https://example.com/cat.png
+  ```
+  - This will download and save the file to the current directory with the name `cat.png`.
 
   ### `wc`
 
