@@ -221,63 +221,63 @@ The following commands are used to compress files on linux. There are many ways 
   - The `tar` utility has many options which can be seen using
   - ```tar --help```
 
-  ## Basic Commands
+## Basic Commands
 
-    ### `wc`
+  ### `wc`
 
-    - One of the most basic commands, `wc` allows the user to count the number of bytes, characters, words and lines of each given file or standard input and print the result.
+  - One of the most basic commands, `wc` allows the user to count the number of bytes, characters, words and lines of each given file or standard input and print the result.
 
-    - ***Basic Use:***
+  - ***Basic Use:***
 
-    Syntax:
-    ```bash
-    $ wc filename  # output: number_of_lines number_of_words number_of_characters /path/to/file
-    ```
+  Syntax:
+  ```bash
+  $ wc filename  # output: number_of_lines number_of_words number_of_characters /path/to/file
+  ```
 
-    Example:
-    ```bash
-    $ wc /proc/cpuinfo  # output: 208 1232 6336 /proc/cpuinfo
-    ```
+  Example:
+  ```bash
+  $ wc /proc/cpuinfo  # output: 208 1232 6336 /proc/cpuinfo
+  ```
 
-    ### `touch`
+  ### `touch`
 
-    - `touch` is a simple command that allows the user to create an empty file. Note that with `touch`, you can only create the file and not edit it.
+  - `touch` is a simple command that allows the user to create an empty file. Note that with `touch`, you can only create the file and not edit it.
 
-    - ***Basic Use:***
+  - ***Basic Use:***
 
-    Syntax:
-    ```bash
-    $ touch filename
-    $ ls -l filename
-    -rw-rw-rw- 1 current_user users 0 Oct  9 22:03 filename
-    ```
+  Syntax:
+  ```bash
+  $ touch filename
+  $ ls -l filename
+  -rw-rw-rw- 1 current_user users 0 Oct  9 22:03 filename
+  ```
 
-    Example:
-    Logged in as user ***linux_is_awesome***
-    ```bash
-   $ touch hello
-   $ ls -l hello
-   -rw-rw-rw- 1 linux_is_awesome users 0 Oct  9 22:03 hello
-    ```
+  Example:
+  Logged in as user ***linux_is_awesome***
+  ```bash
+  $ touch hello
+  $ ls -l hello
+  -rw-rw-rw- 1 linux_is_awesome users 0 Oct  9 22:03 hello
+  ```
 
-    ### `whoami`
+  ### `whoami`
 
-    - `whoami` command displays the username of the current user.
+  - `whoami` command displays the username of the current user.
 
-    - ***Basic Use:***
+  - ***Basic Use:***
 
-    Syntax:
-    ```bash
-    $ whoami
-    current_user
-    ```
+  Syntax:
+  ```bash
+  $ whoami
+  current_user
+  ```
 
-    Example:
-    Logged in as user ***linux_is_awesome***
-    ```bash
-   $ whoami
-   linux_is_awesome
-    ```
+  Example:
+  Logged in as user ***linux_is_awesome***
+  ```bash
+  $ whoami
+  linux_is_awesome
+  ```
 
 ### `grep`
 - `grep` is an extremely useful command to know in Linux.
@@ -316,3 +316,35 @@ This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in 
     To find out /etc/ directory space usage :
     $du /etc/
     $du -h /etc/
+
+  ### `echo`
+
+  - `echo` display a line of text.
+
+  - ***Basic Use:***
+
+  Syntax:
+  ```bash
+  $ echo options string
+  $ echo "hello world"
+  hello worl
+  ```
+
+  Example:
+  ```bash
+  $ echo $USER
+  carlan
+  $ echo $HOME
+  /home/carlan
+  $ forename=carlan
+  $ echo "${forename}"
+  carlan
+  $ echo -e "hello\nworld"
+  hello
+  world
+  $ echo '${forename}'
+  ${forename}
+  $ echo "This is my home folder ${HOME}" > /tmp/myhomefolder.txt
+  $ cat /tmp/myhomefolder.txt
+  This is my home folder /home/carlan
+  ```
