@@ -1,5 +1,27 @@
 <h1 align="center">Linux/Unix Commands</h1>
 
+## Linux Commands used day to day
+  `acpi`- _to display battery status and other acpi information_
+  
+  `apt-get` - _helps in handling packages in Linux_
+  
+  `arch` - _used to print computer architecture_
+  
+  `bc` - _used for command line calculator_
+  
+  `cal` -_used to see the calendar of a specific month or a whole year_
+  
+  `cc` - _it is used to compile C language codes and create executables_
+  
+  `ccrypt` - _command line tool for encryption and decryption of data_
+  
+   `man` - _used to give description of any linux command like this_    ```$ man ls```
+  
+  `info` - _an alternative toobtain uder documentation for a given program is to invoke info instead of man ```$ info ls```
+  
+  `mv` - _mv command is used to move or rename files_
+  
+  `pwd` - _shows the present working directory_
 
 ## Listing Files
 - `ls`
@@ -9,33 +31,31 @@
 - `ls -lh`
 - If you want to arrange the files in list and show their size
 
-
 ## Listing Hidden Files and Normal Files
 - `ls -al`
 - If you want ot see the list of all files with all hidden files in the Current directory system in Linux
 - `ls -lha`
 - If you want to organize files in list format with their sizes and see hidden files
 
-
--`ls -l`\
+-`ls -l`
 -Displays long list view with detailed file information including file type, permissions, link count, owner, group, size, date and time
 
--`ls -lt`\
+-`ls -lt`
 -Lists all files sorted by date and time with the newest file first.
 
--`ls -ltr`\
+-`ls -ltr`
 -Lists all files sorted by date and time with the oldest file first.
 
--`ls -lh`\
+-`ls -lh`
 -Displays all files in current directory with file sizes in human readable format(eg:1.6K,328M,2.4G)
 
--`ls -a`\
+-`ls -a`
 -If you want to list all files including hidden files that start with "."
 
--`ls -la`\
+-`ls -la`
 -Lists all files,including hidden files,in the current directory with detailed information.
 
--`ls -F`\
+-`ls -F`
 -Displays all files in current directory with their file types.
 
 ## Creating & Viewing Files
@@ -74,7 +94,6 @@
   - Replace the *command* above with your command. Eg: `sudo apt-get update`
 
 ## Updating, Installing and Listing packages
-
 The commands for installing and updating applications depend on the version of Linux you are using, specifically whether it's Debian- or RPM-based.
 
 * Debian Based systems
@@ -160,9 +179,7 @@ If you are more interested, there are plenty of other options to be explored fro
 - 'mysql -u root -p'
 -enter the mysql password
 
-
 ## Creating and Removing Directories
-
 * `mkdir` command is used for creating directories.
   - Creating a directory is pretty straightforward.  
         `mkdir [dir-name]`  
@@ -262,34 +279,28 @@ The following commands are used to compress files on linux. There are many ways 
    linux_is_awesome
     ```
 
-    ### `grep`
+### `grep`
+- `grep` is an extremely useful command to know in Linux.
+- It stands for “global regular expression print". Basically, it's used for pattern matching. `grep` processes text line by line and prints any lines which match a specified pattern.
 
-    - `grep` is an extremely useful command to know in Linux.
-
-    - It stands for “global regular expression print". Basically, it's used for pattern matching. `grep` processes text line by line and prints any lines which match a specified pattern.
-
-    - ***Basic Use:***
-
-    Syntax:
-    ```bash
-    $ grep [option(s)] pattern [file(s)]
+- ***Basic Use:***
+Syntax:
+```bash
+$ grep [option(s)] pattern [file(s)]
+ ``` Creating a test file for using `grep`:
+ ```bash
+$  cat > grep_test.txt
+This is a test file. AAA, BBB, 123, CaSe ExAmPle.
     ```
 
-    Creating a test file for using `grep`:
+Example:
+```bash
+$ grep AAA grep_test.txt
+This is a test file. AAA, BBB, 123, CaSe ExAmPle. # AAA will be highlighted in the output
 
-    ```bash
-    $  cat > grep_test.txt
-    This is a test file. AAA, BBB, 123, CaSe ExAmPle.
-    ```
-
-    Example:
-    ```bash
-   $ grep AAA grep_test.txt
-   This is a test file. AAA, BBB, 123, CaSe ExAmPle. # AAA will be highlighted in the output
-
-   $ grep -i case grep_test.txt  # ignore case while searching
-   This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in the output
-    ```
+$ grep -i case grep_test.txt  # ignore case while searching
+This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in the output
+```
     ###  TO CHECK DISK SPACE USED AND AVAILAVBLE
     - COMMANDS
     $df     (Table that lists for each device name on the system)
