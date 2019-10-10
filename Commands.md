@@ -156,6 +156,10 @@ If you are more interested, there are plenty of other options to be explored fro
 
 -`cd "dir name"` or `cd dir\ name`\
 -This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
+##configure to mysql
+- 'mysql -u root -p'
+-enter the mysql password
+
 
 ## Creating and Removing Directories
 
