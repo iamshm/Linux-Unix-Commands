@@ -231,6 +231,17 @@ The following commands are used to compress files on linux. There are many ways 
 
 ## Basic Commands
 
+  ### `htop`
+  
+  - The `htop` command is used get information about the system such as CPU usage, RAM usage, Swap usage etc. It also give information regarding the uptime, average load and currently running tasks.
+  - To use this utility, simply type `htop` and press enter.
+  
+  Syntax:
+  
+  ```
+  $ htop
+  ```
+
   ### `wget`
   
   - The `wget` command is one of the simplist commands in linux. It allows the user to fetch internet resources without having to open a browser.
