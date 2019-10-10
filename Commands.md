@@ -316,6 +316,37 @@ This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in 
     To find out /etc/ directory space usage :
     $du /etc/
     $du -h /etc/
+
+### `echo`
+
+  - `echo` display a line of text.
+
+  - ***Basic Use:***
+  Syntax:
+  ```bash
+  $ echo options string
+  $ echo "hello world"
+  hello worl
+  ```
+  Example:
+  ```bash
+  $ echo $USER
+  carlan
+  $ echo $HOME
+  /home/carlan
+  $ forename=carlan
+  $ echo "${forename}"
+  carlan
+  $ echo -e "hello\nworld"
+  hello
+  world
+  $ echo '${forename}'
+  ${forename}
+  $ echo "This is my home folder ${HOME}" > /tmp/myhomefolder.txt
+  $ cat /tmp/myhomefolder.txt
+  This is my home folder /home/carlan
+  ```
+
     
  
  ### `diff`
@@ -338,4 +369,5 @@ $ diff diff_test_file1.txt diff_test_file2.txt
 ---
 > This is a test file 2
 ```
+
 
