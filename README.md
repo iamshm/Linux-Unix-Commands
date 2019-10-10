@@ -36,7 +36,7 @@ Anyone. Absolutely anyone can contribute to this repository. Please check the ru
 - Feel free to improve the README.md
 
 ## Rules
-
+### Please follow format used in `Commands.md`
 - Please do not spam pull request for the sake of Hacktoberfest.
 - No duplicate entries. Please check if the command is existing before you submit.
 - Star this repository to show appreciation towards public efforts.
