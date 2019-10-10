@@ -1,27 +1,27 @@
 <h1 align="center">Linux/Unix Commands</h1>
 
 ## Linux Commands used day to day
-  `acpi`- _to display battery status and other acpi information_
+- `acpi`- _to display battery status and other acpi information_
   
-  `apt-get` - _helps in handling packages in Linux_
+- `apt-get` - _helps in handling packages in Linux_
   
-  `arch` - _used to print computer architecture_
+- `arch` - _used to print computer architecture_
   
-  `bc` - _used for command line calculator_
+- `bc` - _used for command line calculator_
   
-  `cal` -_used to see the calendar of a specific month or a whole year_
+- `cal` -_used to see the calendar of a specific month or a whole year_
   
-  `cc` - _it is used to compile C language codes and create executables_
+- `cc` - _it is used to compile C language codes and create executables_
   
-  `ccrypt` - _command line tool for encryption and decryption of data_
+- `ccrypt` - _command line tool for encryption and decryption of data_
   
-   `man` - _used to give description of any linux command like this_    ```$ man ls```
+- `man` - _used to give description of any linux command like this_    ```$ man ls```
   
-  `info` - _an alternative toobtain uder documentation for a given program is to invoke info instead of man ```$ info ls```
+- `info` - _an alternative toobtain uder documentation for a given program is to invoke info instead of man ```$ info ls```
   
-  `mv` - _mv command is used to move or rename files_
+- `mv` - _mv command is used to move or rename files_
   
-  `pwd` - _shows the present working directory_
+- `pwd` - _shows the present working directory_
 
 ## Listing Files
 - `ls`
@@ -37,26 +37,26 @@
 - `ls -lha`
 - If you want to organize files in list format with their sizes and see hidden files
 
--`ls -l`
+- `ls -l`
 -Displays long list view with detailed file information including file type, permissions, link count, owner, group, size, date and time
 
--`ls -lt`
+- `ls -lt`
 -Lists all files sorted by date and time with the newest file first.
 
--`ls -ltr`
+- `ls -ltr`
 -Lists all files sorted by date and time with the oldest file first.
 
--`ls -lh`
+- `ls -lh`
 -Displays all files in current directory with file sizes in human readable format(eg:1.6K,328M,2.4G)
 
--`ls -a`
--If you want to list all files including hidden files that start with "."
+- `ls -a`
+- If you want to list all files including hidden files that start with "."
 
--`ls -la`
--Lists all files,including hidden files,in the current directory with detailed information.
+- `ls -la`
+- Lists all files,including hidden files,in the current directory with detailed information.
 
--`ls -F`
--Displays all files in current directory with their file types.
+- `ls -F`
+- Displays all files in current directory with their file types.
 
 ## Creating & Viewing Files
 - To create a new file, use the command
@@ -151,33 +151,33 @@ If you are more interested, there are plenty of other options to be explored fro
 ## Moving between Directories
 - Exploring `cd`(change directory) command
 
--`cd [directory_name]`\
--If you want to change directory to a particular directory,use this command. Eg: cd Documents
+- `cd [directory_name]`\
+- If you want to change directory to a particular directory,use this command. Eg: cd Documents
 
--`cd dir/subdir/subsubdir`\
--If you want to move inside a directory from a directory,use this command. Eg: cd Documents/Hacktoberfest/linuxCommands
+- `cd dir/subdir/subsubdir`\
+- If you want to move inside a directory from a directory,use this command. Eg: cd Documents/Hacktoberfest/linuxCommands
 
--`cd /`\
--If you want to change directory to the root directory. Root directory is the first directory in your file system hierarchy.
+- `cd /`\
+- If you want to change directory to the root directory. Root directory is the first directory in your file system hierarchy.
 
--`cd ~` or `cd`\
--If you want to change directory to the home directory.Generally known as $HOME,located at path /home/<your username>/.
+- `cd ~` or `cd`\
+- If you want to change directory to the home directory.Generally known as $HOME,located at path /home/<your username>/.
   Also, `cd` command can be used to do the same above operation.
 
--`cd ..`\
--It is used to go one level back directory(i.e to parent directory of current directory).
+- `cd ..`\
+- It is used to go one level back directory(i.e to parent directory of current directory).
 
--`cd ../..`\
--It is used to go two levels back directory(i.e to parent's parent directory of current directory).
+- `cd ../..`\
+- It is used to go two levels back directory(i.e to parent's parent directory of current directory).
 
--`cd -`\
--It is used to change back to the previous working directory. Eg: If `Documents` is present working directory and `Downloads` is previous working directory, this command takes you back to `Downloads` directory.
+- `cd -`\
+- It is used to change back to the previous working directory. Eg: If `Documents` is present working directory and `Downloads` is previous working directory, this command takes you back to `Downloads` directory.
 
--`cd "dir name"` or `cd dir\ name`\
--This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
-##configure to mysql
+- `cd "dir name"` or `cd dir\ name`\
+- This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
+## Configure to mysql
 - 'mysql -u root -p'
--enter the mysql password
+- enter the mysql password
 
 ## Creating and Removing Directories
 * `mkdir` command is used for creating directories.
@@ -317,19 +317,17 @@ This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in 
     $du /etc/
     $du -h /etc/
 
-  ### `echo`
+### `echo`
 
   - `echo` display a line of text.
 
   - ***Basic Use:***
-
   Syntax:
   ```bash
   $ echo options string
   $ echo "hello world"
   hello worl
   ```
-
   Example:
   ```bash
   $ echo $USER
@@ -348,3 +346,28 @@ This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in 
   $ cat /tmp/myhomefolder.txt
   This is my home folder /home/carlan
   ```
+
+    
+ 
+ ### `diff`
+- `diff` is an extremely useful command to know in Linux and often used in GIT as well as `git diff`.
+- Compare FILES line by line
+
+- ***Basic Use:***
+Syntax: diff [OPTION]... FILES
+```bash
+$  cat > diff_test_file1.txt
+This is a test file 1
+$  cat > diff_test_file2.txt
+This is a test file 2
+   ```
+Example:
+```bash
+$ diff diff_test_file1.txt diff_test_file2.txt
+1c1
+< This is a test file 1
+---
+> This is a test file 2
+```
+
+
