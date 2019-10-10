@@ -1,27 +1,27 @@
 <h1 align="center">Linux/Unix Commands</h1>
 
 ## Linux Commands used day to day
-  `acpi`- _to display battery status and other acpi information_
+- `acpi`- _to display battery status and other acpi information_
   
-  `apt-get` - _helps in handling packages in Linux_
+- `apt-get` - _helps in handling packages in Linux_
   
-  `arch` - _used to print computer architecture_
+- `arch` - _used to print computer architecture_
   
-  `bc` - _used for command line calculator_
+- `bc` - _used for command line calculator_
   
-  `cal` -_used to see the calendar of a specific month or a whole year_
+- `cal` -_used to see the calendar of a specific month or a whole year_
   
-  `cc` - _it is used to compile C language codes and create executables_
+- `cc` - _it is used to compile C language codes and create executables_
   
-  `ccrypt` - _command line tool for encryption and decryption of data_
+- `ccrypt` - _command line tool for encryption and decryption of data_
   
-   `man` - _used to give description of any linux command like this_    ```$ man ls```
+- `man` - _used to give description of any linux command like this_    ```$ man ls```
   
-  `info` - _an alternative toobtain uder documentation for a given program is to invoke info instead of man ```$ info ls```
+- `info` - _an alternative toobtain uder documentation for a given program is to invoke info instead of man ```$ info ls```
   
-  `mv` - _mv command is used to move or rename files_
+- `mv` - _mv command is used to move or rename files_
   
-  `pwd` - _shows the present working directory_
+- `pwd` - _shows the present working directory_
 
 ## Listing Files
 - `ls`
@@ -37,26 +37,26 @@
 - `ls -lha`
 - If you want to organize files in list format with their sizes and see hidden files
 
--`ls -l`
+- `ls -l`
 -Displays long list view with detailed file information including file type, permissions, link count, owner, group, size, date and time
 
--`ls -lt`
+- `ls -lt`
 -Lists all files sorted by date and time with the newest file first.
 
--`ls -ltr`
+- `ls -ltr`
 -Lists all files sorted by date and time with the oldest file first.
 
--`ls -lh`
+- `ls -lh`
 -Displays all files in current directory with file sizes in human readable format(eg:1.6K,328M,2.4G)
 
--`ls -a`
--If you want to list all files including hidden files that start with "."
+- `ls -a`
+- If you want to list all files including hidden files that start with "."
 
--`ls -la`
--Lists all files,including hidden files,in the current directory with detailed information.
+- `ls -la`
+- Lists all files,including hidden files,in the current directory with detailed information.
 
--`ls -F`
--Displays all files in current directory with their file types.
+- `ls -F`
+- Displays all files in current directory with their file types.
 
 ## Creating & Viewing Files
 - To create a new file, use the command
@@ -151,33 +151,33 @@ If you are more interested, there are plenty of other options to be explored fro
 ## Moving between Directories
 - Exploring `cd`(change directory) command
 
--`cd [directory_name]`\
--If you want to change directory to a particular directory,use this command. Eg: cd Documents
+- `cd [directory_name]`\
+- If you want to change directory to a particular directory,use this command. Eg: cd Documents
 
--`cd dir/subdir/subsubdir`\
--If you want to move inside a directory from a directory,use this command. Eg: cd Documents/Hacktoberfest/linuxCommands
+- `cd dir/subdir/subsubdir`\
+- If you want to move inside a directory from a directory,use this command. Eg: cd Documents/Hacktoberfest/linuxCommands
 
--`cd /`\
--If you want to change directory to the root directory. Root directory is the first directory in your file system hierarchy.
+- `cd /`\
+- If you want to change directory to the root directory. Root directory is the first directory in your file system hierarchy.
 
--`cd ~` or `cd`\
--If you want to change directory to the home directory.Generally known as $HOME,located at path /home/<your username>/.
+- `cd ~` or `cd`\
+- If you want to change directory to the home directory.Generally known as $HOME,located at path /home/<your username>/.
   Also, `cd` command can be used to do the same above operation.
 
--`cd ..`\
--It is used to go one level back directory(i.e to parent directory of current directory).
+- `cd ..`\
+- It is used to go one level back directory(i.e to parent directory of current directory).
 
--`cd ../..`\
--It is used to go two levels back directory(i.e to parent's parent directory of current directory).
+- `cd ../..`\
+- It is used to go two levels back directory(i.e to parent's parent directory of current directory).
 
--`cd -`\
--It is used to change back to the previous working directory. Eg: If `Documents` is present working directory and `Downloads` is previous working directory, this command takes you back to `Downloads` directory.
+- `cd -`\
+- It is used to change back to the previous working directory. Eg: If `Documents` is present working directory and `Downloads` is previous working directory, this command takes you back to `Downloads` directory.
 
--`cd "dir name"` or `cd dir\ name`\
--This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
-##configure to mysql
+- `cd "dir name"` or `cd dir\ name`\
+- This command is used to navigate to a directory with white spaces.Instead of using double quotes we can use single quotes then also this command will work.Eg: `cd "linux commands"` or `cd linux\ commands` will move to 'linux commands' directory.
+## Configure to mysql
 - 'mysql -u root -p'
--enter the mysql password
+- enter the mysql password
 
 ## Creating and Removing Directories
 * `mkdir` command is used for creating directories.
@@ -221,63 +221,63 @@ The following commands are used to compress files on linux. There are many ways 
   - The `tar` utility has many options which can be seen using
   - ```tar --help```
 
-  ## Basic Commands
+## Basic Commands
 
-    ### `wc`
+  ### `wc`
 
-    - One of the most basic commands, `wc` allows the user to count the number of bytes, characters, words and lines of each given file or standard input and print the result.
+  - One of the most basic commands, `wc` allows the user to count the number of bytes, characters, words and lines of each given file or standard input and print the result.
 
-    - ***Basic Use:***
+  - ***Basic Use:***
 
-    Syntax:
-    ```bash
-    $ wc filename  # output: number_of_lines number_of_words number_of_characters /path/to/file
-    ```
+  Syntax:
+  ```bash
+  $ wc filename  # output: number_of_lines number_of_words number_of_characters /path/to/file
+  ```
 
-    Example:
-    ```bash
-    $ wc /proc/cpuinfo  # output: 208 1232 6336 /proc/cpuinfo
-    ```
+  Example:
+  ```bash
+  $ wc /proc/cpuinfo  # output: 208 1232 6336 /proc/cpuinfo
+  ```
 
-    ### `touch`
+  ### `touch`
 
-    - `touch` is a simple command that allows the user to create an empty file. Note that with `touch`, you can only create the file and not edit it.
+  - `touch` is a simple command that allows the user to create an empty file. Note that with `touch`, you can only create the file and not edit it.
 
-    - ***Basic Use:***
+  - ***Basic Use:***
 
-    Syntax:
-    ```bash
-    $ touch filename
-    $ ls -l filename
-    -rw-rw-rw- 1 current_user users 0 Oct  9 22:03 filename
-    ```
+  Syntax:
+  ```bash
+  $ touch filename
+  $ ls -l filename
+  -rw-rw-rw- 1 current_user users 0 Oct  9 22:03 filename
+  ```
 
-    Example:
-    Logged in as user ***linux_is_awesome***
-    ```bash
-   $ touch hello
-   $ ls -l hello
-   -rw-rw-rw- 1 linux_is_awesome users 0 Oct  9 22:03 hello
-    ```
+  Example:
+  Logged in as user ***linux_is_awesome***
+  ```bash
+  $ touch hello
+  $ ls -l hello
+  -rw-rw-rw- 1 linux_is_awesome users 0 Oct  9 22:03 hello
+  ```
 
-    ### `whoami`
+  ### `whoami`
 
-    - `whoami` command displays the username of the current user.
+  - `whoami` command displays the username of the current user.
 
-    - ***Basic Use:***
+  - ***Basic Use:***
 
-    Syntax:
-    ```bash
-    $ whoami
-    current_user
-    ```
+  Syntax:
+  ```bash
+  $ whoami
+  current_user
+  ```
 
-    Example:
-    Logged in as user ***linux_is_awesome***
-    ```bash
-   $ whoami
-   linux_is_awesome
-    ```
+  Example:
+  Logged in as user ***linux_is_awesome***
+  ```bash
+  $ whoami
+  linux_is_awesome
+  ```
 
 ### `grep`
 - `grep` is an extremely useful command to know in Linux.
