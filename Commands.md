@@ -254,6 +254,19 @@ allows you to create users in bulk
   - Once you set up your file create your users by typing
   - ```newusers the-file```
 
+## Modifying users on linux
+- ```usermod -L username``` - If you want to lockout a user
+- ```usermod -U username``` - If you need to unlock a users account locked with the above
+command
+- ```passwd username``` - If you need to change a users password
+- ```usermod -d /path/to/dir username``` - If you need to change a users home directory
+- ```usermod -s /path/to/shell username``` - If you need to change a users shell
+
+## Deleting a user on linux
+- `userdel username` - Deletes user
+- `userdel -r username` - Deletes user and their home directory and mail spool file
+
+
 ## Basic Commands
 
   ### `htop`
