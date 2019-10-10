@@ -370,4 +370,35 @@ $ diff diff_test_file1.txt diff_test_file2.txt
 > This is a test file 2
 ```
 
+### `printf`
 
+`printf` command in Linux is used to display the given string, number or any other format specifier on the terminal window.
+
+It's just like echo, but on steroids.
+
+#### Syntax: 
+
+`printf [-v var] format [arguments]`
+
+`Printf` can have format specifiers, escape sequences or ordinary characters.
+
+#### commonly used `printf` specifiers:
+
+| specifiers | Description |
+|------------|-------------|
+| `%s` | a string specifier for string output |
+| `%d` | an integer specifier for showing the integral values |
+
+#### Example:
+
+```sh
+printf "%s" "Hello, World!"
+# > Hello, World!
+```
+
+```sh
+printf "%d\n" "213" "109"
+# > 213
+# > 109
+```
+______
