@@ -2,25 +2,25 @@
 
 ## Linux Commands used day to day
 - `acpi`- _to display battery status and other acpi information_
-  
+
 - `apt-get` - _helps in handling packages in Linux_
-  
+
 - `arch` - _used to print computer architecture_
-  
+
 - `bc` - _used for command line calculator_
-  
+
 - `cal` -_used to see the calendar of a specific month or a whole year_
-  
+
 - `cc` - _it is used to compile C language codes and create executables_
-  
+
 - `ccrypt` - _command line tool for encryption and decryption of data_
-  
+
 - `man` - _used to give description of any linux command like this_    ```$ man ls```
-  
+
 - `info` - _an alternative toobtain uder documentation for a given program is to invoke info instead of man ```$ info ls```
-  
+
 - `mv` - _mv command is used to move or rename files_
-  
+
 - `pwd` - _shows the present working directory_
 
 ## Listing Files
@@ -206,32 +206,32 @@ Adapter: ISA adapter
 
 ## Creating and Removing Directories
 * `mkdir` command is used for creating directories.
-  - Creating a directory is pretty straightforward.  
-        `mkdir [dir-name]`  
-    
-   - Creating a complete directory structure. (Non of the directories should already exist)   
+  - Creating a directory is pretty straightforward.
+        `mkdir [dir-name]`
+
+   - Creating a complete directory structure. (Non of the directories should already exist)
          `mkdir -p dir1/dir2/dir3`
-   - Make `mkdir` emmit the details of operation.    
+   - Make `mkdir` emmit the details of operation.
           `mkdir -v [dir-name]`
-          
+
 * `rmdir` command is used for removing empty directories.
-  - Removing a directory is also pretty straightforward.  
-        `rmdir [dir-name]`  
-    
-   - Make `rmdir` ignore non empty directories.  
+  - Removing a directory is also pretty straightforward.
+        `rmdir [dir-name]`
+
+   - Make `rmdir` ignore non empty directories.
         BY default, the rmdir command throws an error if you try deleting a non-empty directory. However, if you want, you can suppress this behavior of rmdir using the `--ignore-fail-on-non-empty` option.
-        
+
          `rmdir --ignore-fail-on-non-empty [dir-name]`
-   - Remove parent directories along with the directory.    
+   - Remove parent directories along with the directory.
           `rmdir -p test/test-dir/`
-        
+
 * `rm -r` command is used for removing non empty directories.
-  - Removing a non empty directory is also pretty straightforward.  
-        `rm -r [dir-name]`  
-        This will present a prompt for approval to delete each of the files. 
-        
-  - If you don't want such a prompt,  
-        `rm -rf [dir-name]`  
+  - Removing a non empty directory is also pretty straightforward.
+        `rm -r [dir-name]`
+        This will present a prompt for approval to delete each of the files.
+
+  - If you don't want such a prompt,
+        `rm -rf [dir-name]`
         This will not present a prompt for approval to delete each of the files.
 
 ## Compress files on linux
@@ -254,32 +254,70 @@ The following commands are used to compress files on linux. There are many ways 
   - ```tar -C /myfolder -zxvf yourfile.tar.gz```
   - ```tar -C /myfolder -xvf yourfile.tar```
 
+## Creating users on linux
+
+The following commands are used to create users on linux. One method allows you to create a user at a time while another
+allows you to create users in bulk
+
+* Single User
+  - The following command creates a new user account without any additional actions
+  - ```useradd joe```
+  - The following command creates a new user account and creates a home directory for that user
+  based on the contents of /etc/skel
+  - ```useradd -m joe```
+  - This command will create the user with the home directory you specify
+  - ```useradd -d /path/to/home/dir joe```
+* Multiple Users
+  - The following command creates users based on a `:` delimited list of values. Each user
+  is separated by a new line
+  - The user is defined as follows `username:encrypted-password:uid:gid:home-dir:shell`
+  - Only the first two fields are required for user creation and the password must be encrypted
+  using the below command
+  - ```mkpasswd --method=SHA-512```
+  - You can leave the user without a password by placing an `x` in place of the encrypted
+  password.
+  - Once you set up your file create your users by typing
+  - ```newusers the-file```
+
+## Modifying users on linux
+- ```usermod -L username``` - If you want to lockout a user
+- ```usermod -U username``` - If you need to unlock a users account locked with the above
+command
+- ```passwd username``` - If you need to change a users password
+- ```usermod -d /path/to/dir username``` - If you need to change a users home directory
+- ```usermod -s /path/to/shell username``` - If you need to change a users shell
+
+## Deleting a user on linux
+- `userdel username` - Deletes user
+- `userdel -r username` - Deletes user and their home directory and mail spool file
+
+
 ## Basic Commands
 
   ### `htop`
-  
+
   - The `htop` command is used get information about the system such as CPU usage, RAM usage, Swap usage etc. It also give information regarding the uptime, average load and currently running tasks.
   - To use this utility, simply type `htop` and press enter.
-  
+
   Syntax:
-  
+
   ```
   $ htop
   ```
 
   ### `wget`
-  
+
   - The `wget` command is one of the simplist commands in linux. It allows the user to fetch internet resources without having to open a browser.
   - ***Basic Use:***
 
   Syntax:
-  
+
   ```
   $ wget url
   ```
 
   Example:
-  
+
   - Suppose we want to download a cat photo stored on say `https://example.com/cat.png'. To do so, we'll use the following command.
   ```
   $ wget https://example.com/cat.png
@@ -370,12 +408,12 @@ This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in 
     $df -h  (To see output in Human Readable Format)
     $df -m  (Output in one-megabyte)
     $df -k  (Output in one-kilobyte blocks)
-    
+
     ### TO CHECK DISK SPACE USED BY SPECIFIED FILES AND FOR EACH SUB-DIRECTORY
     -COMMANDS
     $du      (Names and space consumption of each of the directories including all subdirectories)
     $du -h   (To see output in Human Readable Format)
-    
+
     To find out /etc/ directory space usage :
     $du /etc/
     $du -h /etc/
@@ -410,8 +448,8 @@ This is a test file. AAA, BBB, 123, CaSe ExAmPle. # CaSe will be highlighted in 
   This is my home folder /home/carlan
   ```
 
-    
- 
+
+
  ### `diff`
 - `diff` is an extremely useful command to know in Linux and often used in GIT as well as `git diff`.
 - Compare FILES line by line
@@ -439,7 +477,7 @@ $ diff diff_test_file1.txt diff_test_file2.txt
 
 It's just like echo, but on steroids.
 
-#### Syntax: 
+#### Syntax:
 
 `printf [-v var] format [arguments]`
 
