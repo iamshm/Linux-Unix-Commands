@@ -106,6 +106,7 @@ The commands for installing and updating applications depend on the version of L
   - Lists known and installed packages,use ```sudo yum list``` ```sudo yum list --installed```
   - Install requested package,use ```yum install```. Example: ```sudo yum -y install firefox```
   - On Fedora 22 and later, you can also use 'dnf' in place of 'yum'. dnf stands for dandified yum, and is just an updated version of yum.     	   Syntax is very similar, Examples would be: ```sudo dnf update``` or ```sudo dnf install```. More info on this [here.](https://opensource.com/article/18/8/guide-yum-dnf)
+  - On openSUSE, use ```zypper install PACKAGE_NAME``` and ```zypper remove PACKAGE_NAME``` to install or remove packages. To add an repo in openSUSE, ```sudo zypper addrepo <URI> <ALIAS>```. More info on this [here](https://doc.opensuse.org/documentation/leap/reference/html/book.opensuse.reference/cha.sw_cl.html)
 
 ## Download YouTube videos on Linux
 
@@ -138,6 +139,30 @@ youtube-dl -a url.txt
 
 ```
 If you are more interested, there are plenty of other options to be explored from [documentation page.](https://github.com/ytdl-org/youtube-dl)
+
+## Monitering the temperature of your system
+"lm-sensors" is a set of tools to control and view sensors that may be present on your hardware. Included are several applications that run from the command line:
+- sensors: shows the current readings of all sensor chips.
+- sensord: daemon to periodically log sensor readings to syslog
+- fancontrol: calculates fan speeds from temperatures and sets the corresponding PWM outputs
+- pwmconfig: tests the PWM outputs of sensors and configures fancontrol
+- and more (see [lm-sensors documentation](https://wiki.archlinux.org/index.php/Lm_sensors) for details)`
+
+You can use it in the following way,
+```
+~$ sensors
+
+k8temp-pci-00c3
+Adapter: PCI adapter
+Core0 Temp:  +59.0°C                                    
+Core1 Temp:  +58.0°C                                    
+Core2 Temp:  +60.0°C                                    
+Core3 Temp:  +55.0°C                                    
+
+it8718-isa-0228
+Adapter: ISA adapter
+[...] # shortened
+```
 
 ## Shutting down the machine
 - `shutdown -h now`
