@@ -22,6 +22,7 @@
 - `mv` - _mv command is used to move or rename files_
 
 - `pwd` - _shows the present working directory_
+- `cd` - _change directory, opens specific targeted directory_
 
 ## Listing Files
 - `ls`
@@ -293,6 +294,24 @@ command
 
 
 ## Basic Commands
+    ### `cd`
+
+  - The `cd` command is one of the simplist commands in linux. It allows the user to change their working directory to the specified destination they wish to view documents
+  - ***Basic Use:***
+
+  Syntax:
+
+  ```
+  $ cd user/documents/index.html
+  ```
+
+  Example:
+
+  - Suppose we want to change our working directory from desktop to documents. To do so, we'll use the following command.
+  ```
+  $ cd user/documents/index.html
+  ```
+  - This will change our directroy without having to navigate the computer outside of CLI.
 
   ### `htop`
 
