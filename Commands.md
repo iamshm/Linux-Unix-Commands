@@ -23,6 +23,8 @@
 
 - `pwd` - _shows the present working directory_
 
+-  `chmod` - _command sets the file permissions flags on a file or folder
+
 ## Listing Files
 - `ls`
 - If you want to see the list of files on your UNIX or Linux system, use the `ls` command
