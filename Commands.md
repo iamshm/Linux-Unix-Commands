@@ -502,4 +502,47 @@ printf "%d\n" "213" "109"
 # > 213
 # > 109
 ```
+
+### `tee`
+```tee``` command reads the standard input and writes it to both the standard output and one or more files.
+
+It basically breaks the output of a program so that it can be both displayed and saved in a file, simultaneously
+
+### Syntax:
+
+```tee [OPTION]... [FILE]...```
+
+The most useful option is probably the ```-a``` switch, which appends to the specified files rather than overwriting them. ```tee``` also creates the files if they don't exist.
+
+### Example:
+
+```bash
+printf "Hello World" >> a.txt
+# Creates file a.txt (assuming it wasn't there) with content "Hello World"
+touch b.txt
+#Creates b.txt
+wc -w a.txt|tee -a b.txt
+# Output: 2 a.txt
+cat b.txt
+# Output: 2 a.txt
+#Run it again
+wc -w a.txt|tee -a b.txt
+# Output: 2 a.txt
+cat b.txt
+# Output: 2 a.txt (on 2 lines)
+```
+
+**Multiple file example**:
+
+```bash
+# Follow steps of previous example first
+touch c.txt
+wc -w a.txt|tee -a b.txt c.txt
+# Output: 2 a.txt
+cat b.txt
+# Output: 2 a.txt (on 3 lines)
+cat c.txt
+cat b.txt
+# Output: 2 a.txt
+```
 ______
