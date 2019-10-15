@@ -25,6 +25,10 @@
 
 -  `chmod` - _command sets the file permissions flags on a file or folder
 
+-  `lsusb` - _command used to check usb port id
+
+-  `lspci` - _command used to check all detailed information about all PCI buses and devices in the system
+
 ## Listing Files
 - `ls`
 - If you want to see the list of files on your UNIX or Linux system, use the `ls` command
