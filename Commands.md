@@ -552,3 +552,109 @@ cat b.txt
 # Output: 2 a.txt
 ```
 ______
+
+### `screen`
+
+```screen``` -- a full-screen software program that can be used to multiplexes a physical console between several processes (typically interactive shells). It offers a user to open several separate terminal instances inside a one single terminal window manager.
+
++ Prerequisites
+
+```bash 
+apt-get install screen (On Debian based Systems)  
+```
+or 
+
+```bash
+ yum install screen (On RedHat based Systems)
+```
+
+### ex: Create a screen 
+
+`$ screen -S [NAME_of_screen]`
+
++ e.g  `screen -S frodo` 
+
+### ex: Detach a screen (when already inside screen interactive shell)
+
+`press Ctrl-A and 'D'`
+
+you will see the output like this: 
+
+`[detached from 711.frodo]`
+
+### ex: List of current screen sessions 
+
+`$ screen -ls` 
+
+```bash
+@ubuntu ~ $ screen -ls
+There are screens on:
+        711.frodo (10/01/2016 01:15:45 AM)        (Detached)
+        2231.pts-0.ubuntu (06/06/2015 08:12:05 AM)       (Detached)
+2 Sockets in /var/run/screen/S-nightz
+
+```
+
+### ex: restore screen (e.g 711.frodo) to continue your works 
+
+`$ screen -r 711` 
+
+
+### ex: Kill screen (when already inside screen interactive shell)
+
+`press Ctrl-A and 'k'` 
+
+then the terminated prompt will be appeared as: 
+
+```bash
+Want to kill this window [Y/N] > 
+```
+_________________
+
+### strace 
+
+```strace``` -- powerful command line tool for debugging and trouble shooting programs in Unix-like operating systems such as Linux. It captures and records all system calls made by a process and the signals received by the process
+
+- ```strace``` will fill your screen with continues output that shows system calls being made by the process, to end it, press **[Ctrl + C]**
+
+### ex: trace Linux Command System Calls
+
++ e.g: tracing of all system calls made by the **`df`** command
+
+```bash
+$ strace df -h
+
+
+execve("/bin/df", ["df", "-h"], [/* 50 vars */]) = 0
+brk(NULL)                               = 0x136e000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f82f78fd000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=147662, ...}) = 0
+mmap(NULL, 147662, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f82f78d8000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+
+```
+
+#### Where: 
+
++ **access** -- one of types of system call
++ **("/etc/ld.so.preload", R_OK)** -- system call argument 
++ **-1 ENOENT** -- system call return value 
+
+### ex: trace Linux Process PID
+
+```bash
+$ sudo strace -p [PID]
+
+example  
+
+$ sudo strace -p 3569
+
+strace: Process 3569 attached
+restart_syscall(<... resuming interrupted poll ...>) = 1
+recvmsg(4, {msg_name(0)=NULL, msg_iov(1)=[{"U0!70
+
+```
