@@ -210,6 +210,16 @@ Adapter: ISA adapter
 - 'mysql -u root -p'
 - enter the mysql password
 
+## Import and Export database using cli
+
+### Import 
+`mysql -u root -p db-name < /path/to/databse/file.sql`
+
+### Export
+`mysql -u root -p db-name > /path/to/new/database.sql`
+
+It will ask database password.
+
 ## Creating and Removing Directories
 * `mkdir` command is used for creating directories.
   - Creating a directory is pretty straightforward.
@@ -551,4 +561,14 @@ cat c.txt
 cat b.txt
 # Output: 2 a.txt
 ```
+### `ssh` 
+```ssh``` command can be used for accessing remote server (remote login program)
+
+
+### Syntax:
+```ssh username@serverip```
+
+This command connects you to a server which has an IP address as `serverip` and username as `username`.
+
+:fire: For complete info hit  `man ssh` in terminal
 ______
