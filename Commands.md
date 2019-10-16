@@ -678,3 +678,109 @@ restart_syscall(<... resuming interrupted poll ...>) = 1
 recvmsg(4, {msg_name(0)=NULL, msg_iov(1)=[{"U0!70
 
 ```
+_________________
+
+## Network
+
+### `ifconfig`
+
+- Used to configure network interface parameters and displays information about all network interfaces currently in operation.
+
+- `ifconfig -a`
+- Print out the configuration of all network interfaces on the system.
+
+- `ifconfig interface`
+- Print out the configuration of a specific interface.
+
+### ex: ifconfig interface
+```example  
+
+$ ifconfig eth0
+```
+
+- `sudo ifconfig interface up`
+- Enable an interface if it is disabled.
+
+### ex: Enabling an interface
+```
+example  
+
+$ sudo ifconfig eth0 up
+```
+
+- `sudo ifconfig interface down`
+- Disable an interface if it is enabled.
+
+### ex: Disabling an interface
+```
+example  
+
+$ sudo ifconfig eth0 down
+```
+
+### `ping`
+
+- It is used to test the connectivity status between a source and destination computer/device over an IP network.
+
+### ex: use ping
+```bash
+$ ping ip
+
+example  
+
+$ ping 192.168.1.254
+```
+
+### `whois`
+
+- whois is a simple tool that allows you to see information about a specific domain name or IP address. You can use it to see things like contact information, nameservers, and domain registration information.
+
+### ex: install whois
+```
+$ sudo apt install whois
+```
+
+### ex: use whois
+```bash
+$ whois domain
+
+example  
+
+$ whois www.github.com
+```
+
+### `netstat`
+
+- Netstat command allows you a simple way to review each of your network connections and open sockets.
+
+- `netstat -a`
+- List out all the current connections
+
+- `netstat -at`
+- List only TCP connections
+
+- `netstat -au`
+- List only UDP connections
+
+- `netstat -an`
+- Disable reverse dns lookup for faster output if you do not need to know the host name and just the ip address.
+
+- `netstat -s`
+- Print out network statistics like total number of packets received and transmitted by protocol type and so on.
+
+- `netstat -i`
+- Print out the information about the network interfaces.
+
+- `netstat -g`
+- Display the multicast group information for IPv4 and IPv6 protocols.
+
+### `w`
+
+- w provides a quick summary of every user logged into a computer, what each user is currently doing, and what load all the activity is imposing on the computer itself.
+
+### ex: using w
+```
+example  
+
+$ w
+```
