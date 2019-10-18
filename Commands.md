@@ -784,3 +784,7 @@ example
 
 $ w
 ```
+### ssh
+- SSH stands for secure shell. To login in to a system with  user name `user` and `ip-10.85.85.85`,type:
+```ssh user@10.85.85.85```
+- This shall allow you to access the terminal of the remote PC with the user account of ```user```
