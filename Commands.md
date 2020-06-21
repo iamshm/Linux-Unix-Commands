@@ -788,3 +788,34 @@ $ w
 - SSH stands for secure shell. To login in to a system with  user name `user` and `ip-10.85.85.85`,type:
 ```ssh user@10.85.85.85```
 - This shall allow you to access the terminal of the remote PC with the user account of ```user```
+
+### ssh-keygen(Generation and Usage)
+- Inorder to avoid entering the password to remote servers/applications.
+- While ```git push```, we can avoid this scenario by adding a key to our GitHub.
+- Steps:
+``` Scenario 1 using the existing key```
+1. Check for existing keys.
+    ```ls ~/.ssh```
+    eg: default names:``` id_rsa.pub ``` ``` id_rsa ``
+    Here id_rsa is the private key.
+    Files ending with the .pub are the public key which is to be added to the ```authorized_keys`` on remote servers.
+    For GitHub, go to Settings click on SSH and GPG keys
+2. Choose SSH-keys, give it a name and the .pub file.
+  ``` cat ~/.ssh/id_rsa.pub ``` copy and paste this to the key section.
+
+``` Scenario 2 creating a new key ```
+1. Using ssh-keygen we will create keys.
+    ``` ssh-keygen -t rsa -b 4096 ```
+    t-flag: for choosing encryption methods such as RSA,DSA,ECDSA.
+    b-flag: for choosing no. of bits.
+    with help of man command you can know more about ssh-keygen.
+2. It will prompt for the name and location for the keys:
+   default: ```/home/[user]/.ssh/id_rsa```
+   You can choose this, if there is an existing key it will overwrite it.
+3. Pick a relevant name: ```/home/[user]/.ssh/id_rsa_[github|Server A]```
+4. It will ask for passphrase, you can avoid this or enter passphrase which will be asked whenever your using this key. Enter the same passphrase again to confirm it.
+5. Thus you have created the keys(public and private). Sometimes you have to add the generated private key to cache by using ```ssh-add ~/.ssh/[filename]```    
+6. Copy the public key using cat command.
+    eg:``` cat ~/.ssh/[file_name.pub] ```
+7. Add this key to GitHub, by going to Settings and then click on SSH and GPG keys, give a name and paste it.
+
