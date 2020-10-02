@@ -169,6 +169,10 @@ it8718-isa-0228
 Adapter: ISA adapter
 [...] # shortened
 ```
+###To Free up memory cache and buffer
+ sync; echo 1 > /proc/sys/vm/drop_caches
+ sync; echo 2 > /proc/sys/vm/drop_caches
+ sync; echo 3 > /proc/sys/vm/drop_caches
 
 ## Shutting down the machine
 - `shutdown -h now`
