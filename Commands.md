@@ -823,3 +823,6 @@ $ w
     eg:``` cat ~/.ssh/[file_name.pub] ```
 7. Add this key to GitHub, by going to Settings and then click on SSH and GPG keys, give a name and paste it.
 
+## Diffrence between two files
+-  diff filename1 filename2
+-  diff -u filename1 filename2
